@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://diginotebackend.netlify.app',
+    baseURL: 'https://diginotebackend.netlify.app/api',
     withCredentials: true
 });
 
