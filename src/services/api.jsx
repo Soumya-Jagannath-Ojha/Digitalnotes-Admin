@@ -2,7 +2,11 @@ import axios from 'axios';
 
 const api = axios.create({
     baseURL: 'https://diginotebackend.netlify.app/api',
-    withCredentials: true
+    withCredentials: true,
+    headers: {
+        'Access-Control-Allow-Credentials': true,
+    }
+    
 });
 
 // Authentication routes
